@@ -51,6 +51,10 @@ body{
   cursor: pointer;
 }
 
+.loud {
+  color: rgb(114, 255, 250);
+}
+
 .linker:hover {
   color: rgb(102, 157, 206);
   border-color: rgb(102, 157, 206);
