@@ -89,7 +89,6 @@ body {
   font-weight: 900;
   color: var(--text);
   font-size: calc(var(--index)*10);
-  text-shadow: 0 0 1px var(--text);
   letter-spacing: calc(var(--index)/1);
   margin-top: calc(var(--index)*-12);
 }
