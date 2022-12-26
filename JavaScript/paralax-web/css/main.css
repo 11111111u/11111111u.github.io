@@ -6,7 +6,7 @@
 
 :root {
   --index: calc(1vw+1vh);
-  --text: #e30000;
+  --text: #d31900;
   --transition: transform .75s cubic-bezier(0.075, 0.5, 0, 1);;
 }
 
@@ -67,16 +67,16 @@ body {
 }
 
 .layer_base {
-  transform: translate3d(0, calc(var(--scrollTop) / 2.60), 0);
+  transform: translate3d(0, calc(var(--scrollTop) / 2.05), 0);
 }
 
 .layer_middle {
-  transform: translate3d(0, calc(var(--scrollTop) / 2.65), 0);
+  transform: translate3d(0, calc(var(--scrollTop) / 2.10), 0);
 
 }
 
 .layer_front {
-  transform: translate3d(0, calc(var(--scrollTop) / 2.70), 0);
+  transform: translate3d(0, calc(var(--scrollTop) / 2.15), 0);
   z-index: 2;
 }
 
@@ -117,7 +117,7 @@ body {
 
 .main-article_paragraph {
   max-width: calc(var(--index)*30);
-  font-size: calc(var(--index)*1.6);
+  font-size: calc(var(--index)*2);
   margin-top: calc(var(--index)/1.2);
   transform: var(--transform);
   transition: var(--transition);
