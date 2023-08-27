@@ -1,2 +1,0 @@
-git remote add origin https://github.com/11111111u/11111111u.github.io
-git push -u origin master

@@ -1,20 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ПЕКЛО</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #563923;
+    color: #fff;
+  }
 
-	<link rel="stylesheet" href="main.css">
+  header {
+    background-color: #222222;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+  }
 
-  <title>Menu</title>
+  h1 {
+    margin-top: 0;
+  }
+
+  .section {
+    padding: 2em;
+    border-bottom: 8px solid #222222;
+  }
+
+  .section:last-child {
+    border: none;
+  }
+
+  .section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em auto;
+  }
+</style>
 </head>
-<body class="body">
-	<nav>	
-		<h1 class="header">Java Script</h1>
-		<a href="https://11111111u.github.io/JavaScript/waiting-room-web" class="link">
-			<h2 class="linker"> WAITING ROOM </h2>
-		</a>
-	</nav>
+<body>
+  <header>
+    <h1>My Wikipedia-like Page</h1>
+    <p>A Simple One-Page Encyclopedia</p>
+  </header>
+
+  <div class="section">
+    <h2>History of Computers</h2>
+    <p>Computers have a rich history...</p>
+    <img src="pictures/0LEMUR.jpg" alt="Historical Computers">
+  </div>
+
+  <div class="section">
+    <h2>Albert Einstein</h2>
+    <p>Albert Einstein was a theoretical physicist...</p>
+    <img src="einstein.jpg" alt="Albert Einstein">
+  </div>
+
+  <div class="section">
+    <h2>Space Exploration</h2>
+    <p>Space exploration has led to many discoveries...</p>
+    <img src="space.jpg" alt="Space Exploration">
+  </div>
+
+  <script src="script.js"></script>
+  
 </body>
 </html>
