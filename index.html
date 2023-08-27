@@ -3,19 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ПЕКЛО</title>
+<title>My Wikipedia-like Page</title>
 <style>
   body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #563923;
+    background-color: #93593a;
     color: #fff;
   }
 
   header {
-    background-color: #222222;
-    color: #fff;
+    background-color: #222;
     text-align: center;
     padding: 1em 0;
   }
@@ -26,18 +25,36 @@
 
   .section {
     padding: 2em;
-    border-bottom: 8px solid #222222;
+    border-bottom: 6px solid #222;
+    color: #fff;
+    cursor: pointer;
   }
 
   .section:last-child {
     border: none;
   }
 
-  .section img {
+  .image-container {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.6s ease-in-out; /* Smooth transition for height change */
+  }
+
+  .section.active .image-container {
+    max-height: 1000px; /* Adjust the value based on your image size */
+  }
+
+  .image-container img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 1em auto;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .section.active .image-container img {
+    opacity: 1;
   }
 </style>
 </head>
@@ -49,23 +66,39 @@
 
   <div class="section">
     <h2>History of Computers</h2>
-    <p>Computers have a rich history...</p>
-    <img src="pictures/0LEMUR.jpg" alt="Historical Computers">
+    <div class="image-container">
+      <p>Computers have a rich history...</p>
+      <img src="pictures/0LEMUR.jpg" alt="Historical Computers">
+    </div>
   </div>
 
   <div class="section">
     <h2>Albert Einstein</h2>
-    <p>Albert Einstein was a theoretical physicist...</p>
-    <img src="einstein.jpg" alt="Albert Einstein">
+    <div class="image-container">
+      <p>Albert Einstein was a theoretical physicist...</p>
+      <img src="einstein.jpg" alt="Albert Einstein">
+    </div>
   </div>
 
   <div class="section">
     <h2>Space Exploration</h2>
-    <p>Space exploration has led to many discoveries...</p>
-    <img src="space.jpg" alt="Space Exploration">
+    <div class="image-container">
+      <p>Space exploration has led to many discoveries...</p>
+      <img src="space.jpg" alt="Space Exploration">
+    </div>
   </div>
 
-  <script src="script.js"></script>
-  
+  <script>
+    const sections = document.querySelectorAll('.section');
+
+    sections.forEach(section => {
+      section.addEventListener('click', () => {
+        sections.forEach(s => {
+          s.classList.remove('active');
+        });
+        section.classList.add('active');
+      });
+    });
+  </script>
 </body>
 </html>
