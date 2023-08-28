@@ -1,11 +1,13 @@
 function openLink(linkType) {
   let link;
-  if (linkType === 'devil-2') {
-    link = 'https://11111111u.github.io/JavaScript/devil-2';
-  } else if (linkType === 'devil-1') {
-    link = 'https://11111111u.github.io/JavaScript/devil-1';
-  } else if (linkType === 'devil-3') {
-    link = 'https://11111111u.github.io/JavaScript/devil-3';
+  if (linkType === 'categories-1') {
+    link = 'https://11111111u.github.io/categories/1';
+  } else if (linkType === 'categories-2') {
+    link = 'https://11111111u.github.io/categories/2';
+  } else if (linkType === 'categories-3') {
+    link = 'https://11111111u.github.io/categories/3';
+  } else if (linkType === 'categories-x') {
+    link = 'https://11111111u.github.io/categories/x';
   }
   window.location.href = link;
 }
