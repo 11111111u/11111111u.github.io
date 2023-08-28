@@ -2,19 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>НАВІГАЦІЯ</title>
+<link rel="icon" href="wizard.gif" sizes="32x32" type="image/gif">
 
-	<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="main.css">
 
-  <title>ПЕКЛО</title>
 </head>
-<body class="body">
-	<nav>
-			<h1 class="header">ㅤ</h1>
-		<a href="https://11111111u.github.io/JavaScript/devil-1" class="link">
-			<h2 class="linker"> УСТРІЙ </h2>
-		</a>
-	</nav>
+<body>
+  <button class="sound-button" id="soundButton" onclick="toggleSound()">🔇</button>
+  <header>
+    <h1>ПЕКЕЛЬНА НАВІГАЦІЯ</h1>
+  </header>
+  <audio id="audio" src="sound/Hell.mp3" loop></audio>
+  <!-- <main>
+    <h2>МЕНЮ НАВІГАЦІЇ</h2>
+    <p>Щоб користуватись сайтом обери потрібну тобі категорію, натиснувши на одну з кнопок знизу.</p>
+    <h2></h2>
+    <p>🔥👹💥</p>
+  </main> -->
+  <footer>
+    <div class="button-container">
+      <button class="button" onclick="openLink('devil-2')">ПРО ДИЯВОЛІВ</button>
+    </div>
+    <div class="button-container">
+      <button class="button" onclick="openLink('devil-1')">ДИЯВОЛИ ТА ЇХ УСТРІЙ</button>
+    </div>
+    <div class="button-container">
+      <button class="button" onclick="openLink('devil-3')">ПЕКЕЛЬНІ ЛАБІРИНТИ</button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
 </body>
 </html>

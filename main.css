@@ -4,64 +4,72 @@
   box-sizing: border-box;
 }
 
-:root {
-  --index: calc(1vw+1vh);
+body {
+  /* background-color: #830400; */
+  /* background-color: #c42100; */
+  background-image: url('pictures/LAVA.jpg');
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-  background-image: url(/18635.jpg);
-  background-color: rgb(71, 71, 71);
-  min-height: 100vh;
-  position: relative;
-  background-size: cover;
-  background-position: relative;
-  background-repeat: no-repeat;
-  will-change: transform;
+header {
+  color: #fff;
+  background-color: #141414;
+  padding: 20px;
+  text-align: center;
 }
 
-.header {
-  color: rgb(255, 255, 255);
-  font-weight: 800;
-  text-transform: uppercase;
+footer {
+  /* background-color: #333; */
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.button-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  position: relative;
-  text-align: center;
-  font-size: calc(var(--index)*4);
-  letter-spacing: calc(var(--index)/1.5);
-  margin-top: calc(var(--index)*10);
+  margin-top: 10px;
 }
 
-.linker {
-  color: rgb(255, 255, 255);
-  background-color: rgb(64, 64, 64);
-  border-radius: 15px;
-  border:  2px solid rgb(255, 255, 255);
-  padding: 5px 25px;
-  position: relative;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: calc(var(--index)*2);
-  letter-spacing: calc(var(--index)/3);
-  margin-top: calc(var(--index)*5);
+.button {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  border-radius: 25px;
+  padding: 20px;
+  width: 20px;
+  height: 80px;
+
+  font-size: 3ch;
+  flex-basis: 30ch;
+  text-decoration: double;
+  /* background-color: #333; */
+  background-color: #141414;
+  color: #fff;
+  border: hidden;
+  padding: 10px 20px;
+  margin: 0 10px;
+  width: 100px;
+  /* font-size: 150%; */
   cursor: pointer;
 }
 
-.loud {
-  color: rgb(114, 255, 250);
+.button:hover {
+  text-decoration: none;
+  background-color: #830400;
 }
 
-.linker:hover {
-  color: rgb(88, 88, 88);
-  border-color: rgb(50, 50, 50);
-  background-color: rgb(255, 255, 255);
-
-}
-
-.link {
-  color: rgb(255, 255, 255);
+.sound-button {
+  position: absolute;
+  font-size: 200%;
+  top: 10px;
+  left: 5px;
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
 }
