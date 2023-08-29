@@ -1,5 +1,7 @@
 
 https://www.w3docs.com/snippets/css/how-to-add-a-frame-around-an-image.html
+https://www.w3schools.com/howto/howto_css_round_buttons.asp
+
 https://dota2.fandom.com/wiki/Emoticons
 https://ezgif.com/webp-to-gif/ezgif-2-682b54b4ef.webp
 
@@ -8,6 +10,8 @@ https://mp3cut.net/ru/
 https://online-audio-converter.com/
 
 https://ru.piliapp.com/emoji/list/
+
+https://www.instructables.com/Make-your-HTML-Website-suitable-for-Mobile-Devices/
 
 https://freefrontend.com/css-3d-buttons/
 
