@@ -19,10 +19,10 @@ const soundButton = document.getElementById('soundButton');
 function toggleSound() {
   if (isPlaying) {
     audio.pause();
-    soundButton.textContent = '🔇';
+    soundButton.textContent = '💢';
   } else {
     audio.play();
-    soundButton.textContent = '💥';
+    soundButton.textContent = '👹';
   }
   isPlaying = !isPlaying;
 }

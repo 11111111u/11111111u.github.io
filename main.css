@@ -4,34 +4,39 @@
   box-sizing: border-box;
 }
 
+html, body {
+  cursor: url('picture-cursor/cursor.cur'), default;	
+}
+
 body {
-  background-image: url('pictures/LAVA.jpg');
+  background-image: url('pictures-bg/LAVA.jpg');
   background-size: auto;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  min-width: 280px;
-  min-height: 280px;
+  min-width: 380px;
+  min-height: 380px;
 }
 
 header {
-  font-size: 120%;
   background-color: #141414;
-  padding: 15px;
   text-align: center;
+  border-bottom: 8px ridge #a90300;
 }
 
 h1 {
   position: relative;
   font-style: italic;
+  padding: 15px;
   letter-spacing: 6px;
-  color: #ff3c00;
+  font-size: 46px;
+  color: #a90300;
   -webkit-text-fill-color: #141414;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #ff3c00;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #a90300;
 }
 
 footer { 
   text-align: center;
-  margin-top: 200px;
+  margin-top: 180px;
   position: relative;
 }
 
@@ -41,67 +46,87 @@ footer {
 }
 
 .button {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-style: italic;
-  border-radius: 16px;
-  height: 80px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 2px;
+  border-radius: 6px 66px;
+  height: 75px;
 
-  text-shadow: 1px 1px;
+
   font-size: 3ch;
   flex-basis: 30ch;
-  color: #ff3c00;
+  color: #bd3900;
   background-color: #141414;
-  border: hidden;
+  border-width: 8px;
+  border-style: double;
+  border-color: #bd3900;
   margin: 10px 0px;
-  cursor: pointer;
+  cursor: url('picture-cursor/select.cur'), pointer;
 }
 
 .button:hover {
-  text-shadow: 1px 2px;
-  background-color: #333;
-  color: #ff6f43;
+  text-shadow: 1px 0px;
+  background-color: #222;
+  color: #d93d1a;
+  border-color: #d93d1a;
 }
 
 .sound-button {
-
   position: fixed;
-  font-size: 260%;
-  bottom: 5px;
-  right: 5px;
-  background: none;
-  padding: 5px 5px;
-  cursor: pointer;
-  border: none;
+  font-size: 200%;
+  bottom: 8px;
+  right: 8px;
+  height: 66px;
+  width: 66px;
+  padding: 1px 1px;
+  cursor: url('picture-cursor/select.cur'), pointer;
+  border-style: solid;
 
-  /* border-radius: 50%;
+  border-width: 4px;
+  border-radius: 50%;
   background-color: #141414;
-  border-color: #ff3c00; */
+  border-color: #a90300;
 }
 
-/* .link-button {
-  position: absolute;
+.sound-button:hover {
+  background-color: #a90300;
+  border-color: #141414;
+}
+
+.link-button {
+  position: relative;
+  font-size: 200%;
+  top: 9px;
+  left: 9px;
+  height: 66px;
+  width: 66px;
+  padding: 0px 0px;
+  cursor: url('picture-cursor/select.cur'), pointer;
+  border-style: double;
+
+  border-width: 6px;
+  border-radius: 6px 16px;
+  background-color: #141414;
+  border-color: #bd3900;
+
+  /* position: absolute;
   font-size: 220%;
   top: 6px;
-  right: 6px;
+  left: 6px;
   background: none;
   border: none;
-  background-color: #333;
-  border-style: groove;
+  background-color: #141414;
+  border-style: solid;
   border-color: #141414;
 
-  text-align: center;
-  text-decoration: none;
   display: inline-block;
 
   margin: 5px 5px;
   padding: 7px;
-  cursor: pointer;
-}
-
-.link-button {
-  border-radius: 8px;
+  cursor: url('picture-cursor/select.cur'), pointer; */
 }
 
 .link-button:hover {
-  background-color: #970500;
-} */
+  cursor: url('picture-cursor/select.cur'), pointer;
+  background-color: #222;
+  border-color: #d93d1a;
+}
