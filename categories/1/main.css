@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  cursor: url('picture-cursor/cursor.cur'), default;	
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;

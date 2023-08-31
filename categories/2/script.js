@@ -13,8 +13,11 @@ galleryItems.forEach(item => {
   item.addEventListener('click', () => {
     if (document.fullscreenElement) {
       document.exitFullscreen();
+      item.classList.remove('fullscreen');
     } else {
       item.requestFullscreen();
+      item.classList.add('fullscreen');
     }
   });
 });
+

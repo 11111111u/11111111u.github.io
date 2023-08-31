@@ -5,7 +5,7 @@
 }
 
 html, body {
-  cursor: url('picture-cursor/cursor.cur'), default;	
+  cursor: url('picture-cursor/color-fire-flame-cursor.png'), default;	
 }
 
 body {
@@ -36,7 +36,7 @@ h1 {
 
 footer { 
   text-align: center;
-  margin-top: 180px;
+  margin-top: 100px;
   position: relative;
 }
 
@@ -60,7 +60,7 @@ footer {
   border-style: double;
   border-color: #bd3900;
   margin: 10px 0px;
-  cursor: url('picture-cursor/select.cur'), pointer;
+  cursor: url('picture-cursor/color-fire-flame-pointer.png'), pointer;
 }
 
 .button:hover {
@@ -77,8 +77,8 @@ footer {
   right: 8px;
   height: 66px;
   width: 66px;
-  padding: 1px 1px;
-  cursor: url('picture-cursor/select.cur'), pointer;
+  padding: 1px;
+  cursor: url('picture-cursor/color-fire-flame-pointer.png'), pointer;
   border-style: solid;
 
   border-width: 4px;
@@ -95,38 +95,22 @@ footer {
 .link-button {
   position: relative;
   font-size: 200%;
-  top: 9px;
-  left: 9px;
+  /* top: 9px;
+  left: 9px; */
   height: 66px;
   width: 66px;
-  padding: 0px 0px;
-  cursor: url('picture-cursor/select.cur'), pointer;
+  margin: 9px;
+  padding: 0px;
   border-style: double;
-
-  border-width: 6px;
-  border-radius: 6px 16px;
+  border-width: 8px;
+  border-radius: 16px 16px;
   background-color: #141414;
   border-color: #bd3900;
-
-  /* position: absolute;
-  font-size: 220%;
-  top: 6px;
-  left: 6px;
-  background: none;
-  border: none;
-  background-color: #141414;
-  border-style: solid;
-  border-color: #141414;
-
-  display: inline-block;
-
-  margin: 5px 5px;
-  padding: 7px;
-  cursor: url('picture-cursor/select.cur'), pointer; */
+  /* display: inline-block; */
 }
 
 .link-button:hover {
-  cursor: url('picture-cursor/select.cur'), pointer;
+  cursor: url('picture-cursor/color-fire-flame-pointer.png'), pointer;
   background-color: #222;
   border-color: #d93d1a;
 }

@@ -1,6 +1,8 @@
 
 https://www.w3docs.com/snippets/css/how-to-add-a-frame-around-an-image.html
 https://www.w3schools.com/howto/howto_css_round_buttons.asp
+https://www.tutorialspoint.com/how-to-remove-css-property-using-javascript
+https://developer.mozilla.org/en-US/docs/Web/CSS/:disabled
 
 https://dota2.fandom.com/wiki/Emoticons
 https://ezgif.com/webp-to-gif/ezgif-2-682b54b4ef.webp
