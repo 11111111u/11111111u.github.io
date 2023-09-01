@@ -26,3 +26,15 @@ function toggleSound() {
   }
   isPlaying = !isPlaying;
 }
+
+
+
+// var password = "tutorial";
+// (function passcodeprotect() {
+//    var passcode = prompt("Enter PassCode");
+//    while (passcode !== password) {
+//       alert("Incorrect PassCode");
+//       return passcodeprotect();
+//    }
+// }());
+// alert('Welcome To The TP..!');

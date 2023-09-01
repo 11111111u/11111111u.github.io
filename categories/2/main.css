@@ -1,9 +1,10 @@
 :root {
   --main-bg-color: #4e3128;
-  /* --main-bg-color: #533930; */
   --main-text-color: #8b6559;
   --section-border-color: #281b17;
 }
+
+/* --main-bg-color: #533930; */
 
 * {
   padding: 0;
@@ -19,11 +20,14 @@ body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
+  min-width: 380px;
+  min-height: 380px;
+  position: relative;
 }
 
 header {
-  background-color: var(--section-border-color);
   text-align: center;
+  background-color: var(--section-border-color);
   border-bottom: 8px ridge #8b6559;
   /* padding: 1em 0; */
 }
@@ -34,9 +38,7 @@ h1 {
   padding: 15px;
   letter-spacing: 6px;
   font-size: 46px;
-  /* text-align: center;
 
-  text-align: center; */
   -webkit-text-fill-color: #281b17;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: #8b6559;
@@ -44,12 +46,14 @@ h1 {
 }
 
 h2 {
-  border: 4px double #8b6559;
+  text-align: center;
+  border: 8px double #8b6559;
   border-radius: 16px 66px;
   background-color: #281b17;
   font-size: 150%;
   letter-spacing: 3px;
-  padding: 20px;
+  padding: 30px;
+  font-weight: bold;
   position: static;
   display: flex;
   justify-content: center;
@@ -59,7 +63,7 @@ h2 {
 /* //////////////////////////////////////////// */
 
 .section {
-  padding: 2em;
+  padding: 20px;
   font-size: 16px;
   border-bottom: 8px solid #281b17;
 }
@@ -80,8 +84,8 @@ h2 {
   margin: 20px;
   padding: 20px;
   border-radius: 16px 16px;
-  border: 4px solid #8b6559;
-  background-color: #281b17;
+  border: 8px solid #281b17;
+  background-color: #331d16;
   position: relative;
   transition: max-height 0.66s linear;  /* Smooth transition for height change */
   max-height: 1000px; /* Adjust the value based on your image size */
@@ -89,14 +93,14 @@ h2 {
 
 .container img {
   float: left;
-  width: 260px;
-  height: 260px;
+  width: 240px;
+  height: 240px;
 
-  top: 10%;
-  left: 80%;
+  /* top: 10%;
+  left: 80%; */
   /* display: flexbox; */
   position: relative;
-  border: 0px solid;
+  border: 8px double #8b6559;
   margin: 1em auto;
   opacity: 0;
   transition: opacity 0.1s;
@@ -117,7 +121,7 @@ h2 {
 }
 
 .gallery-item:hover {
-  cursor: url('picture-cursor/eye.cur'), pointer;
+  cursor: url('picture-cursor/pointer.cur'), pointer;
   -webkit-filter: none;
   filter: none;
   transform: scale(1.06);
