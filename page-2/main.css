@@ -4,8 +4,6 @@
   --section-border-color: #281b17;
 }
 
-/* --main-bg-color: #533930; */
-
 * {
   padding: 0;
   margin: 0;
@@ -29,7 +27,6 @@ header {
   text-align: center;
   background-color: var(--section-border-color);
   border-bottom: 9px ridge #8b6559;
-  /* padding: 1em 0; */
 }
 
 h1 {
@@ -42,7 +39,6 @@ h1 {
   -webkit-text-fill-color: #281b17;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: #8b6559;
-  /* margin-top: 0; */
 }
 
 h2 {
@@ -56,17 +52,21 @@ h2 {
   padding: 30px;
   font-weight: bold;
   position: relative;
-
-  /* position: static;
-  display: flex;
-  justify-content: center; */
 }
 
 h2:hover {
-  margin-left: 15px;
+  margin-left: 30px;
   color: #281b17;
   border-color: #281b17;
   background-color: #8b6559;
+}
+
+h3{
+  font-weight: bold;
+}
+
+p {
+  margin: 2px;
 }
 
 /* //////////////////////////////////////////// */
@@ -89,27 +89,27 @@ h2:hover {
 }
 
 .section.active .container {
+  text-align: center;
+  display: grid;
   position: relative;
-  font-size: 20px;
-  /* justify-content: center; */
+  font-size: 25px;
   margin: 20px;
-  margin-right: 15%;
-  margin-left: 15%;
-  /* margin-left: 50px; */
-  padding: 20px;
+  margin-right: 10%;
+  margin-left: 10%;
+
+  padding: 25px;
   border-radius: 16px 16px;
   border: 8px solid #281b17;
   background-color: #331d16;
-  transition: max-height 0.44s linear;  /* Smooth transition for height change */
-  max-height: 500px; /* Adjust the value based on your image size */
+  transition: max-height 4.0s linear;
+  max-height: 3000px;
 }
 
 .container img {
   float: left;
-  width: 340px;
-  height: 340px;
+  width: 440px;
+  height: 440px;
 
-  position: relative;
   border: 8px double #8b6559;
   margin: 20px auto;
   opacity: 0;
@@ -139,7 +139,7 @@ h2:hover {
 
 .gallery-item.fullscreen {
   cursor: url('pictures/cursors/pointer.cur'), pointer;
-  object-fit: contain; /* Change to 'contain' for original size */
+  object-fit: contain;
   border: none;
 }
 
@@ -152,7 +152,7 @@ h2:hover {
   left: 16px;
   height: 46px;
   width: 46px;
-  /* margin: 10px; */
+
   padding: 0px;
   border-style: solid;
   font-weight: bold;

@@ -27,7 +27,15 @@ function toggleSound() {
   isPlaying = !isPlaying;
 }
 
+// Disable right-click context menu
+window.addEventListener('contextmenu', function (e) {
+  e.preventDefault();
+});
 
+// Disable text selection
+document.addEventListener('selectstart', function (e) {
+  e.preventDefault();
+});
 
 // var password = "tutorial";
 // (function passcodeprotect() {
