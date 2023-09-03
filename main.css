@@ -5,11 +5,11 @@
 }
 
 html, body {
-  cursor: url('picture-cursor/color-fire-flame-cursor.png'), default;	
+  cursor: url('pictures/cursors/pointer_2.cur'), default;	
 }
 
 body {
-  background-image: url('pictures-bg/LAVA.jpg');
+  background-image: url('pictures/bg/LAVA.jpg');
   background-size: auto;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   min-width: 380px;
@@ -20,7 +20,7 @@ body {
 header {
   background-color: #141414;
   text-align: center;
-  border-bottom: 8px ridge #a90300;
+  border-bottom: 9px ridge #a90300;
 }
 
 h1 {
@@ -48,12 +48,12 @@ footer {
 }
 
 .button {
-  cursor: url('picture-cursor/color-fire-flame-pointer.png'), pointer;
+  cursor: url('pictures/cursors/pointer.cur'), pointer;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   letter-spacing: 4px;
   border-radius: 16px 66px;
-  height: 80px;
-  font-weight: 400;
+  height: 84px;
+  /* font-weight: 100; */
   font-style: italic;
 
   font-size: 36px;
@@ -74,7 +74,7 @@ footer {
 }
 
 .sound-button {
-  cursor: url('picture-cursor/color-fire-flame-pointer.png'), pointer;
+  cursor: url('pictures/cursors/pointer.cur'), pointer;
   position: fixed;
   font-size: 200%;
   bottom: 8px;
@@ -95,13 +95,12 @@ footer {
   border-color: #141414;
 }
 
-.link-button {
-  cursor: url('picture-cursor/color-fire-flame-pointer.png'), pointer;
+/* .link-button {
+  cursor: url('pictures/cursors/pointer.cur'), pointer;
   position: relative;
   text-align: center;
   font-size: 200%;
-  /* top: 9px;
-  left: 9px; */
+
   height: 66px;
   width: 66px;
   margin: 12px;
@@ -111,10 +110,10 @@ footer {
   border-radius: 16px 16px;
   background-color: #141414;
   border-color: #bb3619;
-  /* display: inline-block; */
+
 }
 
 .link-button:hover {
   background-color: #222;
   border-color: #ca4f34;
-}
+} */
