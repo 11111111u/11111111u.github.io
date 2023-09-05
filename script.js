@@ -12,6 +12,8 @@ function openLink(linkType) {
   window.location.href = link;
 }
 
+
+
 let isPlaying = false;
 const audio = document.getElementById('audio');
 const soundButton = document.getElementById('soundButton');
@@ -27,6 +29,8 @@ function toggleSound() {
   isPlaying = !isPlaying;
 }
 
+
+
 // Disable right-click context menu
 window.addEventListener('contextmenu', function (e) {
   e.preventDefault();
@@ -36,6 +40,8 @@ window.addEventListener('contextmenu', function (e) {
 document.addEventListener('selectstart', function (e) {
   e.preventDefault();
 });
+
+
 
 // var password = "tutorial";
 // (function passcodeprotect() {

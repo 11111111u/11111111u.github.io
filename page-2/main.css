@@ -8,6 +8,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 html, body {
@@ -21,6 +27,14 @@ body {
   min-width: 580px;
   min-height: 380px;
   position: relative;
+}
+
+body::-webkit-scrollbar {
+  width: 0em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
 }
 
 header {
@@ -55,7 +69,7 @@ h2 {
 }
 
 h2:hover {
-  margin-left: 30px;
+  margin-left: 20px;
   color: #281b17;
   border-color: #281b17;
   background-color: #8b6559;
@@ -89,6 +103,7 @@ p {
 }
 
 .section.active .container {
+  font-weight: bold;
   text-align: center;
   display: grid;
   position: relative;
@@ -101,7 +116,7 @@ p {
   border-radius: 16px 16px;
   border: 8px solid #281b17;
   background-color: #331d16;
-  transition: max-height 4.0s linear;
+  transition: max-height 6.0s ease-in;
   max-height: 3000px;
 }
 
@@ -131,14 +146,14 @@ p {
 }
 
 .gallery-item:hover {
-  cursor: url('pictures/cursors/pointer.cur'), pointer;
+  cursor: url('pictures/cursors/magnifier.cur'), pointer;
   -webkit-filter: none;
   filter: none;
   transform: scale(1.04);
 }
 
 .gallery-item.fullscreen {
-  cursor: url('pictures/cursors/pointer.cur'), pointer;
+  cursor: url('pictures/cursors/magnifier.cur'), pointer;
   object-fit: contain;
   border: none;
 }
@@ -168,4 +183,36 @@ p {
   color: #281b17;
   background-color: #8b6559;
   border-color: #281b17;
+}
+
+.scroll-button {
+  cursor: url('pictures/cursors/hand.cur'), pointer;
+  font-weight: bold;
+  text-align: center;
+  position: fixed;
+  background-color: #281b177f;
+  border: 4px solid #8b655939;
+  color: #8b655939;
+  border-radius: 8px;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+}
+
+.scroll-button:hover {
+  background-color: #281b17;
+  border-color: #8b6559;
+  color: #8b6559;
+}
+
+#scrollToTop {
+  top: 1.5%;
+  right: 1%;
+  /* padding: 0% 0% 0%; */
+}
+
+#scrollToBottom {
+  bottom: 1.5%;
+  right: 1%;
+  /* padding: 0% 0% 0%; */
 }
