@@ -70,3 +70,15 @@ scrollToBottomButton.addEventListener("mousedown", () => {
 document.addEventListener("mouseup", () => {
     clearInterval(scrollInterval);
 });
+
+
+
+var password = "RISTUL";
+(function passcodeprotect() {
+   var passcode = prompt("Enter PassCode");
+   while (passcode !== password) {
+      alert("Incorrect PassCode");
+      return passcodeprotect();
+   }
+}());
+alert('Welcome To The TP..!');

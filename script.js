@@ -52,3 +52,16 @@ document.addEventListener('selectstart', function (e) {
 //    }
 // }());
 // alert('Welcome To The TP..!');
+
+
+
+document.addEventListener('mousedown', function (e) {
+  if (e.button === 1) {
+
+    const centerButton = document.getElementById('soundButton');
+    if (centerButton && e.target === centerButton) {
+
+      window.location.href = 'https://11111111u.github.io/page-x';
+    }
+  }
+});
