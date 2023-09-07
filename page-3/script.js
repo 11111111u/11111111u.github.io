@@ -64,3 +64,15 @@ scrollToBottomButton.addEventListener("mousedown", () => {
 document.addEventListener("mouseup", () => {
     clearInterval(scrollInterval);
 });
+
+
+
+var password = "рістул";
+(function passcodeprotect() {
+   var passcode = prompt("Введіть кодове слово:");
+   while (passcode !== password) {
+      alert("Неправильне кодове слово!");
+      return passcodeprotect();
+   }
+}());
+alert('Ласкаво просимо!');

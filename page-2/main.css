@@ -17,7 +17,8 @@
 }
 
 html, body {
-  cursor: url('pictures/cursors/pointer_2.cur'), default;	
+  cursor: url('pictures/cursors/pointer_2.cur'), default;
+  font-weight: bold;
 }
 
 body {
@@ -208,11 +209,9 @@ p {
 #scrollToTop {
   top: 1.5%;
   right: 1%;
-  /* padding: 0% 0% 0%; */
 }
 
 #scrollToBottom {
   bottom: 1.5%;
   right: 1%;
-  /* padding: 0% 0% 0%; */
 }

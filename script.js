@@ -6,8 +6,6 @@ function openLink(linkType) {
     link = 'https://11111111u.github.io/page-2';
   } else if (linkType === 'categories-3') {
     link = 'https://11111111u.github.io/page-3';
-  } else if (linkType === 'categories-4') {
-    link = 'https://11111111u.github.io/page-4';
   }
   window.location.href = link;
 }
