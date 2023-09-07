@@ -15,18 +15,20 @@ html, body {
 }
 
 body {
-  background-image: url('pictures/bg/LAVA.jpg');
+  background-image: url('pictures/bg/DOOR.jpg');
   background-size: auto;
+  background-position-x: 50%;
+  background-position-Y: 35%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  min-width: 580px;
-  min-height: 380px;
+  min-width: 280px;
+  min-height: 1280px;
   position: relative;
 }
 
 header {
-  background-color: #141414;
+  background-color: #181818;
   text-align: center;
-  border-bottom: 9px ridge #a90300;
+  border-bottom: 9px ridge #a92d00;
 }
 
 h1 {
@@ -35,10 +37,10 @@ h1 {
   padding: 15px;
   letter-spacing: 6px;
   font-size: 46px;
-  color: #a90300;
-  -webkit-text-fill-color: #141414;
+  color: #a92d00;
+  -webkit-text-fill-color: #181818;
   -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: #a90300;
+  -webkit-text-stroke-color: #a92d00;
 }
 
 footer {
@@ -57,47 +59,50 @@ footer {
   cursor: url('pictures/cursors/pointer.cur'), pointer;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   letter-spacing: 4px;
-  border-radius: 16px 66px;
+  border-radius: 16px;
   height: 84px;
-  font-style: italic;
+  /* font-style: italic; */
 
-  font-size: 36px;
+  font-size: 33px;
   flex-basis: 30ch;
-  color: #bb3619;
-  background-color: #141414;
+  color: #bb3f19;
+  background-color: #181818;
   border-width: 12px;
   border-style: double;
-  border-color: #bb3619;
-  margin: 10px 0px;
+  border-color: #bb3f19;
+  margin: 25px 0px;
 }
 
 .button:hover {
   text-shadow: 0.5px 0px;
   background-color: #222;
-  color: #ca4f34;
-  border-color: #ca4f34;
+  color: #ca5234;
+  border-color: #ca5234;
 }
 
 .sound-button {
   cursor: url('pictures/cursors/pointer.cur'), pointer;
   position: fixed;
-  font-size: 200%;
+  justify-content: center;
+  font-size: 226%;
   bottom: 8px;
   right: 8px;
   height: 66px;
   width: 66px;
-  padding: 1px;
+  padding: 0px;
   border-style: solid;
 
   border-width: 4px;
   border-radius: 50%;
-  background-color: #141414;
-  border-color: #a90300;
+  background-color: #181818;
+  border-color: #a92d00;
+  color: #a92d00;
 }
 
 .sound-button:hover {
-  background-color: #a90300;
-  border-color: #141414;
+  color: #181818;
+  background-color: #a92d00;
+  border-color: #181818;
 }
 
 /* .link-button {

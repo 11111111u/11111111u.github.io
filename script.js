@@ -21,10 +21,10 @@ const soundButton = document.getElementById('soundButton');
 function toggleSound() {
   if (isPlaying) {
     audio.pause();
-    soundButton.textContent = '💢';
+    soundButton.textContent = 'M';
   } else {
     audio.play();
-    soundButton.textContent = '👹';
+    soundButton.textContent = '♪';
   }
   isPlaying = !isPlaying;
 }
@@ -40,16 +40,3 @@ window.addEventListener('contextmenu', function (e) {
 document.addEventListener('selectstart', function (e) {
   e.preventDefault();
 });
-
-
-
-// document.addEventListener('mousedown', function (e) {
-//   if (e.button === 1) {
-
-//     const centerButton = document.getElementById('soundButton');
-//     if (centerButton && e.target === centerButton) {
-
-//       window.location.href = 'https://11111111u.github.io/page-x';
-//     }
-//   }
-// });
