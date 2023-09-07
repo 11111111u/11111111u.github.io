@@ -43,25 +43,13 @@ document.addEventListener('selectstart', function (e) {
 
 
 
-// var password = "tutorial";
-// (function passcodeprotect() {
-//    var passcode = prompt("Enter PassCode");
-//    while (passcode !== password) {
-//       alert("Incorrect PassCode");
-//       return passcodeprotect();
-//    }
-// }());
-// alert('Welcome To The TP..!');
+// document.addEventListener('mousedown', function (e) {
+//   if (e.button === 1) {
 
+//     const centerButton = document.getElementById('soundButton');
+//     if (centerButton && e.target === centerButton) {
 
-
-document.addEventListener('mousedown', function (e) {
-  if (e.button === 1) {
-
-    const centerButton = document.getElementById('soundButton');
-    if (centerButton && e.target === centerButton) {
-
-      window.location.href = 'https://11111111u.github.io/page-x';
-    }
-  }
-});
+//       window.location.href = 'https://11111111u.github.io/page-x';
+//     }
+//   }
+// });

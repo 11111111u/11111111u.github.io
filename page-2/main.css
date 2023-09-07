@@ -116,7 +116,7 @@ p {
   border-radius: 16px 16px;
   border: 8px solid #281b17;
   background-color: #331d16;
-  transition: max-height 6.0s ease-in;
+  transition: max-height 4.0s ease;
   max-height: 3000px;
 }
 

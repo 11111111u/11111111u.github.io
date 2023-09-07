@@ -21,13 +21,7 @@ function updateCarousel() {
 
 
 function openLink(linkType) {
-  let link;
-  if (linkType === 'categories-1') {
-    link = 'https://11111111u.github.io';
-  } else {
-    link = 'https://11111111u.github.io';
-  }
-
+  const link = linkType === 'categories-0' ? 'https://11111111u.github.io' : 'https://11111111u.github.io';
   window.location.href = link;
 }
 
