@@ -67,12 +67,12 @@ document.addEventListener("mouseup", () => {
 
 
 
-var password = "рістул";
-(function passcodeprotect() {
-   var passcode = prompt("Введіть кодове слово:");
-   while (passcode !== password) {
-      alert("Неправильне кодове слово!");
-      return passcodeprotect();
-   }
-}());
-alert('Ласкаво просимо!');
+// var password = "рістул";
+// (function passcodeprotect() {
+//    var passcode = prompt("Введіть кодове слово:");
+//    while (passcode !== password) {
+//       alert("Неправильне кодове слово!");
+//       return passcodeprotect();
+//    }
+// }());
+// alert('Ласкаво просимо!');

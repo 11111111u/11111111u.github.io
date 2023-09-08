@@ -29,6 +29,14 @@ body {
   position: relative;
 }
 
+body::-webkit-scrollbar {
+  width: 0em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
 header {
   text-align: center;
   background-color: var(--section-border-color);
