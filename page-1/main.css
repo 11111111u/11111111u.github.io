@@ -56,6 +56,34 @@ h1 {
   -webkit-text-stroke-color: #8b5959;
 }
 
+table, h3 {
+  border-collapse: collapse;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  display: flex;
+}
+
+h3{
+  font-size: 100px;
+}
+
+th, td {
+  font-weight: bold;
+  /* font-size: 24px; */
+  border: 4px solid #452424;
+  background-color: #281717;
+  color: #8b5959;
+  padding: 18px;
+  justify-content: center;
+  max-width: 220px;
+}
+
+.troop {
+  max-width: 80px;
+}
+
 nav ul {
   border: 4px solid #281717;
   background-color: #331616;
@@ -103,39 +131,6 @@ nav button:hover {
   border-radius: 8px;
   background-color: #331616;
 }
-
-.scroll-button {
-  cursor: url('pictures/cursors/hand.cur'), pointer;
-  text-align: center;
-  position: fixed;
-  background-color: #2817177f;
-  border: 4px solid #8b595939;
-  color: #8b595939;
-  border-radius: 8px;
-  width: 60px;
-  height: 60px;
-  font-size: 30px;
-}
-
-.scroll-button:hover {
-  background-color: #281717;
-  border-color: #8b5959;
-  color: #8b5959;
-}
-
-#scrollToTop {
-  top: 1.5%;
-  right: 1%;
-  /* padding: 0% 0% 0%; */
-}
-
-#scrollToBottom {
-  bottom: 1.5%;
-  right: 1%;
-  /* padding: 0% 0% 0%; */
-}
-
-
 
 .link-button {
   cursor: url('pictures/cursors/pointer.cur'), pointer;
