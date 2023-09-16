@@ -102,40 +102,6 @@ h1 {
 
 
 
-.scroll-button {
-  cursor: url('pictures/cursors/hand.cur'), pointer;
-  font-weight: bold;
-  text-align: center;
-  position: fixed;
-  background-color: #172528;
-  border: 4px solid #597c8b;
-  color: #597c8b;
-  border-radius: 8px;
-  width: 60px;
-  height: 60px;
-  font-size: 30px;
-}
-
-.scroll-button:hover {
-  background-color: #172528;
-  border-color: #597c8b;
-  color: #597c8b;
-}
-
-#scrollToTop {
-  top: 1.5%;
-  right: 1%;
-  /* padding: 0% 0% 0%; */
-}
-
-#scrollToBottom {
-  bottom: 1.5%;
-  right: 1%;
-  /* padding: 0% 0% 0%; */
-}
-
-
-
 .link-button {
   cursor: url('pictures/cursors/pointer.cur'), pointer;
   position: absolute;

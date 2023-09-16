@@ -16,6 +16,8 @@ window.addEventListener('contextmenu', function (e) {
 
 
 
+localStorage.clear = function() {};
+
 class EditableTable {
   constructor(table) {
     this.table = table;

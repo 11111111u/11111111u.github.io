@@ -38,35 +38,6 @@ document.addEventListener('selectstart', function (e) {
 
 
 
-const scrollToTopButton = document.getElementById("scrollToTop");
-const scrollToBottomButton = document.getElementById("scrollToBottom");
-let scrollInterval;
-
-function handleScroll(direction) {
-    scrollInterval = setInterval(() => {
-        window.scrollBy(0, direction * 35);
-    }, 10);
-}
-
-window.addEventListener("scroll", () => {
-    const shouldDisplay = document.body.scrollTop >= 0 || document.documentElement.scrollTop >= 0;
-    scrollToTopButton.style.display = scrollToBottomButton.style.display = shouldDisplay ? "block" : "none";
-});
-
-scrollToTopButton.addEventListener("mousedown", () => {
-    handleScroll(-1);
-});
-
-scrollToBottomButton.addEventListener("mousedown", () => {
-    handleScroll(1);
-});
-
-document.addEventListener("mouseup", () => {
-    clearInterval(scrollInterval);
-});
-
-
-
 // var password = "рістул";
 // (function passcodeprotect() {
 //    var passcode = prompt("Введіть кодове слово:");
