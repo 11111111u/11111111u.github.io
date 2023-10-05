@@ -1,7 +1,7 @@
 :root {
-  --main-bg-color: #283c4e;
-  --main-text-color: #597c8b;
-  --section-border-color: #172528;
+  --main-bg-color: #4e2838;
+  --main-text-color: #8b5970;
+  --section-border-color: #28171f;
 }
 
 * {
@@ -40,7 +40,7 @@ body::-webkit-scrollbar-thumb {
 header {
   text-align: center;
   background-color: var(--section-border-color);
-  border-bottom: 9px ridge #597c8b;
+  border-bottom: 9px ridge #8b5970;
 }
 
 h1 {
@@ -50,9 +50,9 @@ h1 {
   letter-spacing: 6px;
   font-size: 46px;
 
-  -webkit-text-fill-color: #172528;
+  -webkit-text-fill-color: #28171f;
   -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: #597c8b;
+  -webkit-text-stroke-color: #8b5970;
 }
 
 .container {
@@ -117,13 +117,13 @@ h1 {
 
   border-width: 4px;
   border-radius: 50%;
-  color: #597c8b;
-  background-color: #172528;
-  border-color: #597c8b;
+  color: #8b5970;
+  background-color: #28171f;
+  border-color: #8b5970;
 }
 
 .link-button:hover {
-  color: #172528;
-  background-color: #597c8b;
-  border-color: #172528;
+  color: #8b5970;
+  background-color: #59748b;
+  border-color: #8b5970;
 }

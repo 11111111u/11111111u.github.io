@@ -1,13 +1,29 @@
-const allowedIPs = ['xxx.xxx.xxx.xxx', 'yyy.yyy.yyy.yyy']; //whitelisted IPs
-function checkIP(req, res, next) {
-    const clientIP = req.connection.remoteAddress;
-    if (allowedIPs.includes(clientIP)) {
-        next();
-    } else {
-        res.status(403).send('Access Forbidden');
-    }
+function checkAuthentication() {
+  const username = 'username';
+  const password = 'password';
+
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://11111111u.github.io/hidden/characters', true);
+  xhr.setRequestHeader('Authorization', 'Basic ' + btoa(username + ':' + password));
+
+  xhr.onload = function () {
+      if (xhr.status === 200) {
+          // Access granted
+          console.log('Access granted');
+      } else {
+          // Access denied
+          console.log('Access denied');
+      }
+  };
+
+  xhr.onerror = function () {
+      // Handle network errors
+      console.error('Network error');
+  };
+
+  xhr.send();
 }
-app.use(checkIP);
+checkAuthentication();
 
 
 
