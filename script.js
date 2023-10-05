@@ -1,11 +1,11 @@
 function openLink(linkType) {
   let link;
   if (linkType === 'categories-1') {
-    link = 'https://11111111u.github.io/page-1';
+    link = 'https://11111111u.github.io/archive/resources.html';
   } else if (linkType === 'categories-2') {
-    link = 'https://11111111u.github.io/page-2';
+    link = 'https://11111111u.github.io/census';
   } else if (linkType === 'categories-3') {
-    link = 'https://11111111u.github.io/page-3';
+    link = 'https://11111111u.github.io/gallery';
   }
   window.location.href = link;
 }

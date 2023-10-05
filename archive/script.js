@@ -16,7 +16,7 @@ window.addEventListener('contextmenu', function (e) {
 
 
 
-localStorage.clear = function() {};
+// localStorage.clear = function() {};
 
 class EditableTable {
   constructor(table) {
@@ -50,4 +50,4 @@ const table2 = new EditableTable(document.getElementById('editableTable2'));
 
 
 
-  // localStorage.clear();
+  localStorage.clear();
