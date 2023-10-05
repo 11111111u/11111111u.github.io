@@ -1,7 +1,7 @@
 function openLink(linkType) {
   let link;
   if (linkType === 'categories-1') {
-    link = 'https://11111111u.github.io/archive/resources.html';
+    link = 'https://11111111u.github.io/archive/culture.html';
   } else if (linkType === 'categories-2') {
     link = 'https://11111111u.github.io/census';
   } else if (linkType === 'categories-3') {
